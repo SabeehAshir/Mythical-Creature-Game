@@ -47,9 +47,7 @@ class Mythical_Creature
             }
             Print("*******This program is to look after some mythical creatures that have been created********");
             
-           
             Playgame(creature_record);
-            
             return;
         
         }//Ends Mythical_Creature_Care
@@ -65,9 +63,7 @@ class Mythical_Creature
         public static int Get_Killer_Score(int [] hunger,int [] Anger, int [] illness,int index)//Getting the killerscore of the creature
         {
             
-            
             int Killer=hunger[index]+Anger[index]+illness[index];
-            
             return Killer;
             
         }//Ends Get_Killer_Score()
@@ -122,12 +118,9 @@ class Mythical_Creature
             
             for(int i=1; i<=NUM_OF_ROUNDS; i++) //loop for num of rounds
             {
-                Print("\nRound >> " + i +" <<");
-
+                Print("\nRound >> " + i +" <<");         
                 
-                Print_Data(record);
-
-                
+                Print_Data(record);              
 
                 for(int j = 1;  j<=CHOICE_IN_EACH_ROUND ;j++) //loop to move around for and choose any two creature in each round to take care of the creatures
                 {
@@ -138,8 +131,6 @@ class Mythical_Creature
                     Print("Creature "+j+" : "+ record[index].Name);
                     Print("Enter the action: Givewater, Givefood, Vaccinate, Moveit");
 
-           
-            
                     while (!ValidInput)
                     {
                     Print("Enter : ");
@@ -152,12 +143,6 @@ class Mythical_Creature
                    Danger_Message(Killer_Score,record[index].Name);
                     
                 }
-
-                
-
-                
-             
-
                 
                 
             }
@@ -240,3 +225,4 @@ class Mythical_Creature
         
         
 }
+
