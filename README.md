@@ -1,33 +1,33 @@
-#🐉 Mythical Creature Caretaker (Java OOP)
-📌 Project Overview
-Developed as a core academic project for CS Level 06, this Java application simulates a complex management system for maintaining the health and temperament of mythical entities. The program challenges the user to strategically manage resources (food, medicine, and environment) to ensure survival through multiple simulation rounds.
+# 🐉 Mythical Creature Caretaker (Java OOP)
 
-🎯 Key Learning Objectives
-Object-Oriented Design: Implementing custom classes (Creature) to encapsulate state and behavior.
+## 📌 Project Overview
+This Java application is a survival simulation where the user acts as a caretaker for various mythical entities. The project demonstrates the application of **Object-Oriented Programming (OOP)** and **algorithmic resource management**.
 
-Data Structures: Utilizing arrays of objects to manage a dynamic "Creature Record" system.
+The core challenge involves maintaining the health and temperament of five distinct creatures across multiple rounds, ensuring their "Killer Score" does not reach fatal levels.
 
-Algorithm Logic: Developing a "Killer Score" algorithm to calculate survival probability based on weighted environmental factors.
 
-💻 Technical Implementation
-Encapsulation: Designed a Creature class with specific attributes including Anger_level, Hunger_level, and Magic_level.
 
-Resource Management Logic: Built a Calculate_Score method to handle real-time stat modification based on user actions (Givefood, Vaccinate, Moveit).
+## 🚀 Key Features
+* **Encapsulated Entity Management**: Uses a custom `Creature` class to store state-specific data such as `Anger_level`, `Hunger_level`, and `Illness_level`.
+* **Strategic Game Loop**: A modular `Playgame` method that allows users to interact with entities through specific actions: `Givewater`, `Givefood`, `Vaccinate`, and `Moveit`.
+* **Dynamic Risk Assessment**: An algorithm-based `Danger_Message` system that provides real-time feedback (e.g., "Peaceful," "Miffed," or "DANGEROUS") based on the creature's current stats.
+* **Input Validation**: A robust `CheckValid` system that ensures only authorized commands are processed, preventing system crashes.
 
-Validation Systems: Implemented robust input validation (CheckValid) to ensure system stability during user interaction.
+## 🛠 Technical Implementation
+* **Data Structures**: Managed a collection of entities using an array of objects (`Creature[] creature_record`).
+* **Stat Weighting**: Implemented a weighted calculation to derive a `Killer_Score` from individual attributes.
+* **Modular Design**: Organized logic into reusable static methods, separating data printing from core calculation logic.
 
-Procedural Execution: Organized code into modular static methods (Playgame, Print_Data, Danger_Message) for high maintainability.
+## 📈 Database Foundations (ER Concept)
+This project serves as a practical foundation for **Relational Model mapping**:
+* **Entity Type**: The `Creature` class acts as a strong entity type.
+* **Attributes**: Includes simple attributes (e.g., `Anger_level`) and unique identifiers (e.g., `Name`).
 
-🛠️ Skills & Tools Used
-Language: Java (JDK 8+)
 
-Input Handling: java.util.Scanner for interactive CLI.
 
-Concepts: Arrays of Objects, Conditional Logic, Looping, Static Methods, and Class Instantiation.
-
-🚀 Impact & Results
-System Accuracy: Successfully implemented a multi-round game loop that tracks 5 distinct creature types simultaneously.
-
-User Feedback: Integrated a dynamic Danger_Message system that provides tiered feedback based on calculated risk levels (Peaceful, Miffed, Dangerous, Rabid).
-
-Code Quality: Achieved a clean separation of concerns by isolating the data printing logic from the core game mechanics.
+## 🛡️ Setup & Usage
+1. **Ensure Java is installed** on your system.
+2. **Clone the Repository**: `git clone https://github.com/SabeehAshir/Mythical-Creature-Game`
+3. **Compile**: 
+   ```bash
+   javac Mythical_Creature.java
