@@ -1,10 +1,9 @@
 /*************************************
  * @author    Sabeeh Ahmad Ashir
- * @SID       230611665
  * @date      7 October 2024
- * @version   1
+ * @version   6
  *
- * Miniproject Level 06
+ * Miniproject 
  * A program that takes care of a mythical creature
  * and helps the caretaker survive.
  ****************************************/
